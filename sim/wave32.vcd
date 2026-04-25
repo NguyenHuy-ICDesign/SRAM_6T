@@ -1,0 +1,155 @@
+$date
+	Thu Mar 19 12:47:18 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_sram32 $end
+$var wire 32 ! dout [31:0] $end
+$var reg 2 " addr [1:0] $end
+$var reg 1 # clk $end
+$var reg 32 $ din [31:0] $end
+$var reg 1 % re $end
+$var reg 1 & rst $end
+$var reg 1 ' we $end
+$scope module uut $end
+$var wire 2 ( addr [1:0] $end
+$var wire 1 # clk $end
+$var wire 32 ) din [31:0] $end
+$var wire 1 % re $end
+$var wire 1 & rst $end
+$var wire 1 ' we $end
+$var wire 32 * dout [31:0] $end
+$scope module s0 $end
+$var wire 2 + addr [1:0] $end
+$var wire 1 # clk $end
+$var wire 8 , din [7:0] $end
+$var wire 1 % re $end
+$var wire 1 ' we $end
+$var reg 8 - dout [7:0] $end
+$upscope $end
+$scope module s1 $end
+$var wire 2 . addr [1:0] $end
+$var wire 1 # clk $end
+$var wire 8 / din [7:0] $end
+$var wire 1 % re $end
+$var wire 1 ' we $end
+$var reg 8 0 dout [7:0] $end
+$upscope $end
+$scope module s2 $end
+$var wire 2 1 addr [1:0] $end
+$var wire 1 # clk $end
+$var wire 8 2 din [7:0] $end
+$var wire 1 % re $end
+$var wire 1 ' we $end
+$var reg 8 3 dout [7:0] $end
+$upscope $end
+$scope module s3 $end
+$var wire 2 4 addr [1:0] $end
+$var wire 1 # clk $end
+$var wire 8 5 din [7:0] $end
+$var wire 1 % re $end
+$var wire 1 ' we $end
+$var reg 8 6 dout [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+0'
+1&
+0%
+bx $
+0#
+bx "
+bx !
+$end
+#5000
+1#
+#10000
+0#
+0&
+#15000
+1#
+#20000
+b11101111 ,
+b10111110 /
+b10101101 2
+b11011110 5
+0#
+1'
+b11011110101011011011111011101111 $
+b11011110101011011011111011101111 )
+b1 "
+b1 (
+b1 +
+b1 .
+b1 1
+b1 4
+#25000
+1#
+#30000
+0#
+0'
+#35000
+1#
+#40000
+0#
+#45000
+1#
+#50000
+0#
+1%
+#55000
+b11011110 6
+b10101101 3
+b10111110 0
+b11011110101011011011111011101111 !
+b11011110101011011011111011101111 *
+b11101111 -
+1#
+#60000
+0#
+0%
+#65000
+1#
+#70000
+0#
+#75000
+1#
+#80000
+0#
+#85000
+1#
+#90000
+0#
+#95000
+1#
+#100000
+0#
+#105000
+1#
+#110000
+0#

@@ -1,0 +1,218 @@
+$date
+	Thu Mar 19 17:27:01 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_cpu_sram $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 1 # we $end
+$var wire 32 $ wdata [31:0] $end
+$var wire 32 % rdata [31:0] $end
+$var wire 32 & addr [31:0] $end
+$scope module u_cpu $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 32 ' mem_rdata [31:0] $end
+$var reg 32 ( mem_addr [31:0] $end
+$var reg 32 ) mem_wdata [31:0] $end
+$var reg 1 # mem_we $end
+$var reg 4 * state [3:0] $end
+$upscope $end
+$scope module u_mem $end
+$var wire 2 + addr [1:0] $end
+$var wire 1 ! clk $end
+$var wire 32 , din [31:0] $end
+$var wire 1 - re $end
+$var wire 1 " rst $end
+$var wire 1 # we $end
+$var wire 32 . dout [31:0] $end
+$scope module s0 $end
+$var wire 2 / addr [1:0] $end
+$var wire 1 ! clk $end
+$var wire 8 0 din [7:0] $end
+$var wire 1 - re $end
+$var wire 1 # we $end
+$var reg 8 1 dout [7:0] $end
+$upscope $end
+$scope module s1 $end
+$var wire 2 2 addr [1:0] $end
+$var wire 1 ! clk $end
+$var wire 8 3 din [7:0] $end
+$var wire 1 - re $end
+$var wire 1 # we $end
+$var reg 8 4 dout [7:0] $end
+$upscope $end
+$scope module s2 $end
+$var wire 2 5 addr [1:0] $end
+$var wire 1 ! clk $end
+$var wire 8 6 din [7:0] $end
+$var wire 1 - re $end
+$var wire 1 # we $end
+$var reg 8 7 dout [7:0] $end
+$upscope $end
+$scope module s3 $end
+$var wire 2 8 addr [1:0] $end
+$var wire 1 ! clk $end
+$var wire 8 9 din [7:0] $end
+$var wire 1 - re $end
+$var wire 1 # we $end
+$var reg 8 : dout [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx :
+b0 9
+b0 8
+bx 7
+b0 6
+b0 5
+bx 4
+b0 3
+b0 2
+bx 1
+b0 0
+b0 /
+bx .
+1-
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+bx '
+b0 &
+bx %
+b0 $
+0#
+1"
+0!
+$end
+#5000
+1!
+#10000
+0!
+0"
+#15000
+0-
+b11101111 0
+b10111110 3
+b10101101 6
+b11011110 9
+b1 +
+b1 /
+b1 2
+b1 5
+b1 8
+b1 *
+1#
+b11011110101011011011111011101111 $
+b11011110101011011011111011101111 )
+b11011110101011011011111011101111 ,
+b100 &
+b100 (
+1!
+#20000
+0!
+#25000
+1-
+b10 *
+0#
+1!
+#30000
+0!
+#35000
+b11 *
+b11011110 :
+b10101101 7
+b10111110 4
+b11011110101011011011111011101111 %
+b11011110101011011011111011101111 '
+b11011110101011011011111011101111 .
+b11101111 1
+1!
+#40000
+0!
+#45000
+b100 *
+1!
+#50000
+0!
+#55000
+1!
+#60000
+0!
+#65000
+1!
+#70000
+0!
+#75000
+1!
+#80000
+0!
+#85000
+1!
+#90000
+0!
+#95000
+1!
+#100000
+0!
+#105000
+1!
+#110000
+0!
+#115000
+1!
+#120000
+0!
+#125000
+1!
+#130000
+0!
+#135000
+1!
+#140000
+0!
+#145000
+1!
+#150000
+0!
+#155000
+1!
+#160000
+0!
+#165000
+1!
+#170000
+0!
+#175000
+1!
+#180000
+0!
+#185000
+1!
+#190000
+0!
+#195000
+1!
+#200000
+0!
+#205000
+1!
+#210000
+0!
