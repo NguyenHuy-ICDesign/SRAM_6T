@@ -1,0 +1,1287 @@
+OpenROAD v2.0-27431-g7de25a98e7 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+========================================
+ OpenROAD Full-Backend v3 - soc_top_macro
+ up to Detailed Route
+========================================
+[INFO ODB-0227] LEF file: macro/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file macro/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: macro/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0227] LEF file: macro/SRAM_4x8_fixed.lef, created 1 library cells
+[WARNING ORD-2011] LEF master Array_4x8_non_hiera_Pin has no liberty cell.
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+
+=== AREA BEFORE FLOORPLAN ===
+Design area 88451 um^2 100% utilization.
+Reading SDC: openlane/soc_top_macro_full/constraints_soc_top_macro_full.sdc
+
+Floorplanning...
+[WARNING IFP-0028] Core area lower left (60.000, 60.000) snapped to (60.260, 62.560).
+[INFO IFP-0001] Added 230 rows of 2129 site unithd.
+
+=== Manual macro placement ===
+Found macro instances: u_mem/u0/u_macro u_mem/u1/u_macro u_mem/u2/u_macro u_mem/u3/u_macro
+Placing u_mem/u0/u_macro at 150 100
+Placing u_mem/u1/u_macro at 380 100
+Placing u_mem/u2/u_macro at 610 100
+Placing u_mem/u3/u_macro at 840 100
+[INFO ODB-0303] The initial 230 rows (489670 sites) were cut with 4 shapes for a total of 294 rows (482950 sites).
+
+Placing pins...
+Found 4 macro blocks.
+[INFO PPL-0001] Number of available slots 1006
+[INFO PPL-0002] Number of I/O             141
+[INFO PPL-0003] Number of I/O w/sink      139
+[INFO PPL-0004] Number of I/O w/o sink    2
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 71259.40 um.
+[INFO IFP-0030] Inserted 1 tiecells using sky130_fd_sc_hd__conb_1/LO.
+[INFO IFP-0030] Inserted 0 tiecells using sky130_fd_sc_hd__conb_1/HI.
+
+Running global placement...
+[INFO GPL-0005] Execute conjugate gradient initial placement.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: ( 60.260 62.560 ) ( 1039.600 688.160 ) um
+[INFO GPL-0032] Initializing region: Top-level
+[INFO GPL-0006] Number of instances:              6237
+[INFO GPL-0007] Movable instances:                6109
+[INFO GPL-0008] Fixed instances:                     4
+[INFO GPL-0009] Dummy instances:                   124
+[INFO GPL-0010] Number of nets:                   6174
+[INFO GPL-0011] Number of pins:                  25352
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 1100.000 750.000 ) um
+[INFO GPL-0013] Core BBox: ( 60.260 62.560 ) ( 1039.600 688.160 ) um
+[INFO GPL-0016] Core area:                  612675.104 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                612675.104 um^2
+[INFO GPL-0017] Fixed instances area:         8408.064 um^2
+[INFO GPL-0018] Movable instances area:      86582.009 um^2
+[INFO GPL-0019] Utilization:                    14.328 %
+[INFO GPL-0020] Standard cells area:         86582.009 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.00054832 HPWL: 251952840
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.00209068 HPWL: 161818078
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.01114939 HPWL: 160083107
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00486649 HPWL: 157382545
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00112303 HPWL: 153847423
+[InitialPlace]  Iter: 6 conjugate gradient residual: 0.00116141 HPWL: 151738415
+[InitialPlace]  Iter: 7 conjugate gradient residual: 0.00016756 HPWL: 150109943
+[InitialPlace]  Iter: 8 conjugate gradient residual: 0.00007046 HPWL: 148784850
+[InitialPlace]  Iter: 9 conjugate gradient residual: 0.00105663 HPWL: 147457484
+[InitialPlace]  Iter: 10 conjugate gradient residual: 0.00007407 HPWL: 146465099
+[InitialPlace]  Iter: 11 conjugate gradient residual: 0.00015703 HPWL: 144701577
+[InitialPlace]  Iter: 12 conjugate gradient residual: 0.00021623 HPWL: 144722154
+[InitialPlace]  Iter: 13 conjugate gradient residual: 0.00093051 HPWL: 144490277
+[InitialPlace]  Iter: 14 conjugate gradient residual: 0.00002063 HPWL: 144502870
+[InitialPlace]  Iter: 15 conjugate gradient residual: 0.00009608 HPWL: 144399457
+[InitialPlace]  Iter: 16 conjugate gradient residual: 0.00002559 HPWL: 144477884
+[InitialPlace]  Iter: 17 conjugate gradient residual: 0.00003377 HPWL: 144416464
+[InitialPlace]  Iter: 18 conjugate gradient residual: 0.00000649 HPWL: 144470433
+[INFO GPL-0033] Initializing Nesterov region: Top-level
+[INFO GPL-0023] Placement target density:       0.1800
+[INFO GPL-0024] Movable insts average area:     14.173 um^2
+[INFO GPL-0025] Ideal bin area:                 78.738 um^2
+[INFO GPL-0026] Ideal bin count:                  7781
+[INFO GPL-0027] Total bin area:             612675.104 um^2
+[INFO GPL-0028] Bin count (X, Y):          64 ,     64
+[INFO GPL-0029] Bin size (W * H):      15.302 *  9.775 um
+[INFO GPL-0030] Number of bins:                   4096
+[INFO GPL-0007] Execute nesterov global placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9712 |  9.726361e+04 |   +0.00% |  2.38e-16 |      
+       10 |   0.9378 |  1.174326e+05 |  +20.74% |  3.87e-16 |      
+       20 |   0.9391 |  1.184687e+05 |   +0.88% |  6.30e-16 |      
+       30 |   0.9389 |  1.192057e+05 |   +0.62% |  1.03e-15 |      
+       40 |   0.9386 |  1.197607e+05 |   +0.47% |  1.67e-15 |      
+       50 |   0.9383 |  1.198238e+05 |   +0.05% |  2.72e-15 |      
+       60 |   0.9381 |  1.193073e+05 |   -0.43% |  4.44e-15 |      
+       70 |   0.9381 |  1.185108e+05 |   -0.67% |  7.23e-15 |      
+       80 |   0.9384 |  1.174873e+05 |   -0.86% |  1.18e-14 |      
+       90 |   0.9386 |  1.164749e+05 |   -0.86% |  1.92e-14 |      
+      100 |   0.9383 |  1.156714e+05 |   -0.69% |  3.12e-14 |      
+      110 |   0.9380 |  1.152487e+05 |   -0.37% |  5.09e-14 |      
+      120 |   0.9380 |  1.152693e+05 |   +0.02% |  8.29e-14 |      
+      130 |   0.9381 |  1.157774e+05 |   +0.44% |  1.35e-13 |      
+      140 |   0.9376 |  1.168140e+05 |   +0.90% |  2.20e-13 |      
+      150 |   0.9369 |  1.187230e+05 |   +1.63% |  3.58e-13 |      
+      160 |   0.9363 |  1.217384e+05 |   +2.54% |  5.83e-13 |      
+      170 |   0.9346 |  1.259697e+05 |   +3.48% |  9.50e-13 |      
+      180 |   0.9321 |  1.318315e+05 |   +4.65% |  1.55e-12 |      
+      190 |   0.9276 |  1.389882e+05 |   +5.43% |  2.52e-12 |      
+      200 |   0.9224 |  1.477489e+05 |   +6.30% |  4.09e-12 |      
+      210 |   0.9142 |  1.582037e+05 |   +7.08% |  6.66e-12 |      
+      220 |   0.9046 |  1.701963e+05 |   +7.58% |  1.08e-11 |      
+      230 |   0.8929 |  1.832489e+05 |   +7.67% |  1.76e-11 |      
+      240 |   0.8751 |  1.980641e+05 |   +8.08% |  2.87e-11 |      
+      250 |   0.8505 |  2.117991e+05 |   +6.93% |  4.66e-11 |      
+      260 |   0.8210 |  2.264738e+05 |   +6.93% |  7.58e-11 |      
+      270 |   0.7872 |  2.400485e+05 |   +5.99% |  1.23e-10 |      
+      280 |   0.7533 |  2.544638e+05 |   +6.01% |  2.01e-10 |      
+      290 |   0.7128 |  2.726312e+05 |   +7.14% |  3.26e-10 |      
+      300 |   0.6730 |  2.942586e+05 |   +7.93% |  5.30e-10 |      
+      310 |   0.6228 |  3.198150e+05 |   +8.69% |  8.61e-10 |      
+      320 |   0.5689 |  3.368144e+05 |   +5.32% |  1.40e-09 |      
+      330 |   0.5187 |  3.449041e+05 |   +2.40% |  2.28e-09 |      
+      340 |   0.4686 |  3.530268e+05 |   +2.36% |  3.71e-09 |      
+      350 |   0.4183 |  3.608918e+05 |   +2.23% |  6.03e-09 |      
+      360 |   0.3755 |  3.635990e+05 |   +0.75% |  9.82e-09 |      
+      370 |   0.3415 |  3.656514e+05 |   +0.56% |  1.58e-08 |      
+      380 |   0.3133 |  3.680946e+05 |   +0.67% |  2.33e-08 |      
+      390 |   0.2826 |  3.701710e+05 |   +0.56% |  3.43e-08 |      
+      400 |   0.2557 |  3.716455e+05 |   +0.40% |  5.06e-08 |      
+      410 |   0.2311 |  3.724541e+05 |   +0.22% |  7.45e-08 |      
+      420 |   0.2055 |  3.725031e+05 |   +0.01% |  1.10e-07 |      
+      430 |   0.1789 |  3.740137e+05 |   +0.41% |  1.62e-07 |      
+      440 |   0.1502 |  3.757139e+05 |   +0.45% |  2.38e-07 |      
+      450 |   0.1287 |  3.770535e+05 |   +0.36% |  3.51e-07 |      
+      460 |   0.1043 |  3.784271e+05 |   +0.36% |  5.17e-07 |      
+      462 |   0.0995 |  3.787223e+05 |          |  5.80e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 462
+[INFO GPL-1002] Placed Cell Area            86582.0094
+[INFO GPL-1003] Available Free Area         604267.0400
+[INFO GPL-1004] Minimum Feasible Density        0.1500 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.1592
+[INFO GPL-1008]     - For 80% usage of free space: 0.1791
+[INFO GPL-1009]     - For 50% usage of free space: 0.2866
+[INFO GPL-1014] Final placement area: 86582.01 (+0.00%)
+
+Running detailed placement...
+Placement Analysis
+---------------------------------
+total displacement       8492.2 u
+average displacement        1.4 u
+max displacement           10.3 u
+original HPWL          378543.8 u
+legalized HPWL         384396.6 u
+delta HPWL                    2 %
+
+
+Running Clock Tree Synthesis...
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_1.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_1.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_1
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_1.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 1688 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 1 buffer(s) types.
+[INFO CTS-0201] 4 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 1688.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0023]  Original sink region: [(67890, 131980), (1023310, 681420)].
+[INFO CTS-0024]  Normalized sink region: [(4.99191, 9.70441), (75.2434, 50.1044)].
+[INFO CTS-0025]     Width:  70.2515.
+[INFO CTS-0026]     Height: 40.4000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 844
+    Sub-region size: 35.1257 X 40.4000
+[INFO CTS-0034]     Segment length (rounded): 18.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 422
+    Sub-region size: 35.1257 X 20.2000
+[INFO CTS-0034]     Segment length (rounded): 10.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 211
+    Sub-region size: 17.5629 X 20.2000
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 4
+    Direction: Vertical
+    Sinks per sub-region: 106
+    Sub-region size: 17.5629 X 10.1000
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 5
+    Direction: Horizontal
+    Sinks per sub-region: 53
+    Sub-region size: 8.7814 X 10.1000
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 6
+    Direction: Vertical
+    Sinks per sub-region: 27
+    Sub-region size: 8.7814 X 5.0500
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 7
+    Direction: Horizontal
+    Sinks per sub-region: 14
+    Sub-region size: 4.3907 X 5.0500
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 1688.
+[INFO CTS-0018]     Created 165 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 4.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 4.
+[INFO CTS-0015]     Created 165 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 6:2, 7:1, 8:4, 9:10, 10:10, 11:13, 12:16, 13:14, 14:12, 15:14, 16:12, 17:9, 18:6, 19:3, 20:1, 22:1..
+[INFO CTS-0017]     Max level of the clock tree: 7.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 1778
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 1111.16 um
+[INFO CTS-0102]  Path depth 4 - 4
+[INFO CTS-0207]  Dummy loads inserted 90
+
+Running post-CTS detailed placement...
+Placement Analysis
+---------------------------------
+total displacement        372.2 u
+average displacement        0.1 u
+max displacement            4.6 u
+original HPWL          403394.5 u
+legalized HPWL         403402.7 u
+delta HPWL                    0 %
+
+
+Starting Global Routing...
+✓ Saved: results/soc_top_macro_full_gr.def
+✓ Saved: results/soc_top_macro_full_gr.v
+✓ Saved: results/soc_top_macro_full_gr.odb
+
+Running pin access check...
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     438
+Number of vias:       25
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+[WARNING DRT-0120] Large net rstn has 182 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0010_[0] has 277 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0010_[2] has 286 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0010_[3] has 127 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[0] has 262 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[1] has 129 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[2] has 279 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[3] has 109 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0368_ has 108 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0416_ has 103 pins which may impact routing performance. Consider optimization.
+
+Design:                   soc_top_macro
+Die area:                 ( 0 0 ) ( 1100000 750000 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     6368
+Number of terminals:      141
+Number of snets:          3
+Number of nets:           6339
+
+[INFO DRT-0167] List of default vias:
+  Layer mcon
+    default via: L1M1_PR
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 1307.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete licon.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] licon shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 244869.
+[INFO DRT-0033] mcon shape region query size = 0.
+[INFO DRT-0033] met1 shape region query size = 43550.
+[INFO DRT-0033] via shape region query size = 0.
+[INFO DRT-0033] met2 shape region query size = 1020.
+[INFO DRT-0033] via2 shape region query size = 0.
+[INFO DRT-0033] met3 shape region query size = 112.
+[INFO DRT-0033] via3 shape region query size = 0.
+[INFO DRT-0033] met4 shape region query size = 269.
+[INFO DRT-0033] via4 shape region query size = 0.
+[INFO DRT-0033] met5 shape region query size = 0.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0076]   Complete 1000 pins.
+[INFO DRT-0076]   Complete 2000 pins.
+[INFO DRT-0076]   Complete 3000 pins.
+[INFO DRT-0076]   Complete 4000 pins.
+[INFO DRT-0076]   Complete 5000 pins.
+[INFO DRT-0076]   Complete 6000 pins.
+[INFO DRT-0076]   Complete 7000 pins.
+[INFO DRT-0076]   Complete 8000 pins.
+[INFO DRT-0076]   Complete 9000 pins.
+[INFO DRT-0076]   Complete 10000 pins.
+[INFO DRT-0078]   Complete 10732 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4144_, master is sky130_fd_sc_hd__o21ai_0.
+[INFO DRT-0079]   Complete 200 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4261_, master is sky130_fd_sc_hd__o21ai_0.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4320_, master is sky130_fd_sc_hd__o21ai_0.
+[INFO DRT-0079]   Complete 300 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4573_, master is sky130_fd_sc_hd__o21ai_0.
+[INFO DRT-0079]   Complete 400 unique inst patterns.
+[INFO DRT-0079]   Complete 500 unique inst patterns.
+[INFO DRT-0079]   Complete 600 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_5319_, master is sky130_fd_sc_hd__a221oi_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_5366_, master is sky130_fd_sc_hd__nor3b_1.
+[INFO DRT-0079]   Complete 700 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6007_, master is sky130_fd_sc_hd__a31o_1.
+[INFO DRT-0079]   Complete 800 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6139_, master is sky130_fd_sc_hd__mux4_2.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6267_, master is sky130_fd_sc_hd__mux4_2.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6312_, master is sky130_fd_sc_hd__a221oi_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6500_, master is sky130_fd_sc_hd__a221oi_1.
+[INFO DRT-0079]   Complete 900 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6527_, master is sky130_fd_sc_hd__a31o_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6714_, master is sky130_fd_sc_hd__a221oi_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6856_, master is sky130_fd_sc_hd__a31o_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_7381_, master is sky130_fd_sc_hd__a32o_1.
+[INFO DRT-0079]   Complete 1000 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_8028_, master is sky130_fd_sc_hd__a311o_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_8279_, master is sky130_fd_sc_hd__edfxtp_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_8365_, master is sky130_fd_sc_hd__edfxtp_1.
+[INFO DRT-0081]   Complete 1306 unique inst patterns.
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8722_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8630_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8534_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6987_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8947_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9054_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8605_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6463_
+cpu/_6465_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6215_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7242_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9060_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9092_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6683_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8925_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6462_
+cpu/_6467_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9012_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7037_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6432_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9298_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7418_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7420_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6926_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6672_
+cpu/_6679_
+cpu/_6674_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7011_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8676_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6162_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9269_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9155_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8310_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6163_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7588_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5643_
+cpu/_8306_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6933_
+cpu/_7597_
+cpu/_7602_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6919_
+cpu/_6920_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7596_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9167_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6267_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8943_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8872_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7146_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7142_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8365_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8631_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8397_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7546_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6951_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9165_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7548_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9064_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+clkbuf_7_89__f_clk
+clkload62
+cpu/_6877_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6863_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9280_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8997_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6963_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6966_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8760_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7291_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8520_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9320_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8433_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8792_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8504_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6546_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6139_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7454_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8421_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8453_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6118_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7122_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7301_
+cpu/_7300_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7381_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7400_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7108_
+cpu/_9597_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8673_
+cpu/_7309_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8385_
+cpu/_6540_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6527_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6451_
+cpu/_6445_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6321_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6312_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8481_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6500_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6535_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6313_
+cpu/_6314_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6412_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7151_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7212_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8425_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6394_
+cpu/_6371_
+cpu/_6348_
+cpu/_6346_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6657_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6126_
+cpu/_6121_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9161_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5767_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8782_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9262_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8842_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6693_
+cpu/_9581_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6690_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6784_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7487_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5949_
+cpu/_5952_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5944_
+cpu/_5937_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5763_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5956_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8718_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9070_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6714_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5973_
+cpu/_5970_
+cpu/_5969_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5836_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8523_
+cpu/_8395_
+cpu/_7508_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5832_
+cpu/_5829_
+cpu/_5830_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5819_
+cpu/_5820_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8634_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6007_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7516_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9050_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5978_
+cpu/_5986_
+cpu/_5171_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6040_
+cpu/_6041_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7523_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8327_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6037_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9195_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6191_
+cpu/_9562_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6381_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6856_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5666_
+cpu/_5671_
+cpu/_5655_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5660_
+cpu/_5661_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4744_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7532_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8972_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5007_
+cpu/_5006_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4767_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4785_
+cpu/_4784_
+cpu/_9530_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7847_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7327_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5033_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4302_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8035_
+cpu/_8028_
+cpu/_8027_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8146_
+cpu/_8144_
+cpu/_8131_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7184_
+cpu/_7183_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4975_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4322_
+cpu/_4320_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7857_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+clkload84
+clkbuf_7_120__f_clk
+cpu/_9490_
+cpu/_4573_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8507_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6572_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4583_
+cpu/_4584_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7938_
+cpu/_7924_
+cpu/_7936_
+cpu/_7937_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4912_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4956_
+cpu/_4955_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7754_
+cpu/_7753_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8418_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8279_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8667_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8284_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4266_
+cpu/_4261_
+cpu/_4265_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4144_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9407_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5319_
+cpu/_4356_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8286_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5320_
+cpu/_5322_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5521_
+cpu/_9622_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9416_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5378_
+cpu/_5377_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5362_
+cpu/_9646_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4407_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+u_imem/_58_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5554_
+cpu/_9431_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5365_
+cpu/_9653_
+cpu/_4410_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9397_
+cpu/_9409_
+cpu/_9708_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5366_
+u_imem/_52_
+u_imem/_46_
+u_imem/_43_
+u_imem/_51_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9717_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5359_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9724_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9776_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9740_
+WARNING: pin_access failed or unsupported: DRT-0085
+
+Starting Detailed Routing...
+[WARNING DRT-0120] Large net rstn has 182 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0010_[0] has 277 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0010_[2] has 286 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0010_[3] has 127 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[0] has 262 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[1] has 129 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[2] has 279 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0011_[3] has 109 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0368_ has 108 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net cpu/_0416_ has 103 pins which may impact routing performance. Consider optimization.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete licon.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0076]   Complete 1000 pins.
+[INFO DRT-0076]   Complete 2000 pins.
+[INFO DRT-0076]   Complete 3000 pins.
+[INFO DRT-0076]   Complete 4000 pins.
+[INFO DRT-0076]   Complete 5000 pins.
+[INFO DRT-0076]   Complete 6000 pins.
+[INFO DRT-0076]   Complete 7000 pins.
+[INFO DRT-0076]   Complete 8000 pins.
+[INFO DRT-0076]   Complete 9000 pins.
+[INFO DRT-0076]   Complete 10000 pins.
+[INFO DRT-0078]   Complete 10732 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4144_, master is sky130_fd_sc_hd__o21ai_0.
+[INFO DRT-0079]   Complete 200 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4261_, master is sky130_fd_sc_hd__o21ai_0.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4320_, master is sky130_fd_sc_hd__o21ai_0.
+[INFO DRT-0079]   Complete 300 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_4573_, master is sky130_fd_sc_hd__o21ai_0.
+[INFO DRT-0079]   Complete 400 unique inst patterns.
+[INFO DRT-0079]   Complete 500 unique inst patterns.
+[INFO DRT-0079]   Complete 600 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_5319_, master is sky130_fd_sc_hd__a221oi_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_5366_, master is sky130_fd_sc_hd__nor3b_1.
+[INFO DRT-0079]   Complete 700 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6007_, master is sky130_fd_sc_hd__a31o_1.
+[INFO DRT-0079]   Complete 800 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6139_, master is sky130_fd_sc_hd__mux4_2.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6267_, master is sky130_fd_sc_hd__mux4_2.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6312_, master is sky130_fd_sc_hd__a221oi_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6500_, master is sky130_fd_sc_hd__a221oi_1.
+[INFO DRT-0079]   Complete 900 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6527_, master is sky130_fd_sc_hd__a31o_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6714_, master is sky130_fd_sc_hd__a221oi_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_6856_, master is sky130_fd_sc_hd__a31o_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_7381_, master is sky130_fd_sc_hd__a32o_1.
+[INFO DRT-0079]   Complete 1000 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_8028_, master is sky130_fd_sc_hd__a311o_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_8279_, master is sky130_fd_sc_hd__edfxtp_1.
+[WARNING DRT-0087] No valid pattern for unique instance cpu/_8365_, master is sky130_fd_sc_hd__edfxtp_1.
+[INFO DRT-0081]   Complete 1306 unique inst patterns.
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8722_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8630_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8534_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6987_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8947_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9054_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8605_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6463_
+cpu/_6465_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6215_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7242_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9060_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9092_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6683_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8925_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6462_
+cpu/_6467_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9012_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7037_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6432_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9298_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7418_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7420_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6926_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6672_
+cpu/_6679_
+cpu/_6674_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7011_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8676_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6162_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9269_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9155_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8310_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6163_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7588_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5643_
+cpu/_8306_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6933_
+cpu/_7597_
+cpu/_7602_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6919_
+cpu/_6920_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7596_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9167_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6267_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8943_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8872_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7146_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7142_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8365_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8631_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8397_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7546_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6951_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9165_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7548_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9064_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+clkbuf_7_89__f_clk
+clkload62
+cpu/_6877_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6863_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9280_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8997_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6963_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6966_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8760_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7291_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8520_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9320_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8433_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8792_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8504_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6546_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6139_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7454_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8421_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8453_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6118_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7122_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7301_
+cpu/_7300_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7381_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7400_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7108_
+cpu/_9597_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8673_
+cpu/_7309_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8385_
+cpu/_6540_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6527_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6451_
+cpu/_6445_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6321_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6312_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8481_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6500_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6535_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6313_
+cpu/_6314_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6412_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7151_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7212_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8425_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6394_
+cpu/_6371_
+cpu/_6348_
+cpu/_6346_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6657_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6126_
+cpu/_6121_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9161_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5767_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8782_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9262_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8842_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6693_
+cpu/_9581_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6690_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6784_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7487_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5949_
+cpu/_5952_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5944_
+cpu/_5937_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5763_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5956_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8718_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9070_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6714_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5973_
+cpu/_5970_
+cpu/_5969_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5836_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8523_
+cpu/_8395_
+cpu/_7508_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5832_
+cpu/_5829_
+cpu/_5830_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5819_
+cpu/_5820_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8634_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6007_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7516_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9050_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5978_
+cpu/_5986_
+cpu/_5171_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6040_
+cpu/_6041_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7523_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8327_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6037_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9195_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6191_
+cpu/_9562_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6381_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6856_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5666_
+cpu/_5671_
+cpu/_5655_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5660_
+cpu/_5661_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4744_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7532_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8972_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5007_
+cpu/_5006_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4767_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4785_
+cpu/_4784_
+cpu/_9530_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7847_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7327_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5033_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4302_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8035_
+cpu/_8028_
+cpu/_8027_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8146_
+cpu/_8144_
+cpu/_8131_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7184_
+cpu/_7183_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4975_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4322_
+cpu/_4320_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7857_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+clkload84
+clkbuf_7_120__f_clk
+cpu/_9490_
+cpu/_4573_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8507_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_6572_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4583_
+cpu/_4584_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7938_
+cpu/_7924_
+cpu/_7936_
+cpu/_7937_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4912_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4956_
+cpu/_4955_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_7754_
+cpu/_7753_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8418_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8279_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8667_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8284_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4266_
+cpu/_4261_
+cpu/_4265_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4144_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9407_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5319_
+cpu/_4356_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_8286_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5320_
+cpu/_5322_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5521_
+cpu/_9622_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9416_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5378_
+cpu/_5377_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5362_
+cpu/_9646_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_4407_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+u_imem/_58_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5554_
+cpu/_9431_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5365_
+cpu/_9653_
+cpu/_4410_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9397_
+cpu/_9409_
+cpu/_9708_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5366_
+u_imem/_52_
+u_imem/_46_
+u_imem/_43_
+u_imem/_51_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9717_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_5359_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9724_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9776_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+cpu/_9740_
+Error: run_openroad_soc_top_macro_full_route.tcl, 154 DRT-0085
+[?2004hopenroad> [?2004l
+

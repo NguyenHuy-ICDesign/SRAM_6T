@@ -1,0 +1,6 @@
+picorv32_sram_adapter.v : chuyển giao tiếp từ PicoRV32 sang SRAM wrapper
+sram_32bit_wrapper.v    : ghép 4 SRAM 8-bit thành bus 32-bit
+sram_model.v            : mô hình hành vi SRAM 8-bit để mô phỏng
+simple_imem.v           : instruction memory đơn giản
+adapter_sram_top.v      : top test adapter + SRAM
+tb_adapter_sram.v       : testbench kiểm tra adapter + SRAM
