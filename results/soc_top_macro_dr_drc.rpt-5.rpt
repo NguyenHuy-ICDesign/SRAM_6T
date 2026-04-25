@@ -1,0 +1,33 @@
+violation type: Short
+	srcs: net:cpu/count_cycle[28] net:cpu/count_cycle[60]
+	bbox = (522.7200, 188.7550) - (522.7850, 188.8350) on Layer met1
+violation type: Short
+	srcs: net:mem_rdata[1] net:cpu/_1583_
+	bbox = (155.9500, 259.5300) - (156.0750, 259.6100) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1584_
+	bbox = (159.6100, 259.3200) - (159.7650, 259.3700) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1584_
+	bbox = (174.1850, 259.7600) - (174.4000, 259.8600) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1583_
+	bbox = (175.3300, 259.6800) - (175.5350, 259.8000) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1583_
+	bbox = (175.3300, 259.7200) - (175.5350, 259.8000) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1583_
+	bbox = (175.3300, 259.7200) - (175.6500, 259.8000) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1583_
+	bbox = (175.3300, 259.6800) - (175.6500, 259.8000) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1583_
+	bbox = (155.7800, 259.7600) - (155.7850, 259.8600) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1583_
+	bbox = (155.7850, 259.7600) - (156.0750, 259.8600) on Layer met1
+violation type: Metal Spacing
+	srcs: net:cpu/_1583_
+	bbox = (175.3600, 259.7500) - (175.6200, 259.7700) on Layer met2
