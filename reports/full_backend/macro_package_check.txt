@@ -1,0 +1,16 @@
+Macro RTL stub module name: Array_4x8_non_hiera_Pin
+Macro LEF file: macro/SRAM_4x8_fixed.lef
+Macro GDS file: macro/Array_4x8_non_hiera_Pin.gds
+
+Macro name in LEF: Array_4x8_non_hiera_Pin
+Power pins present:
+- VPWR
+- VGND
+- VPWR2
+
+Functional pins checked:
+- WL1
+- Data_out1
+
+LEF size:
+- 43.75 BY 37.5

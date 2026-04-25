@@ -1,0 +1,34 @@
+read_verilog rtl/soc_top_macro.v
+read_verilog rtl/sram_32bit_wrapper_macro.v
+read_verilog rtl/sram8_macro_tile.v
+read_verilog rtl/sram_macro.v
+read_verilog rtl/row_decoder.v
+read_verilog rtl/sram_ctrl.v
+read_verilog rtl/picorv32_sram_adapter.v
+read_verilog rtl/simple_imem.v
+read_verilog rtl/picorv32.v
+
+hierarchy -top soc_top_macro
+
+# giữ macro SRAM là hard macro
+# Macro is marked with (* blackbox *) in rtl/sram_macro.v
+# Keep hierarchy so OpenROAD can place u_mem/u*/u_macro deterministically.
+
+
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+
+dfflibmap -liberty macro/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty macro/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+
+clean
+opt
+
+write_verilog -noattr -noexpr -simple-lhs results/soc_top_macro_synth.v
